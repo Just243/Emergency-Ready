@@ -1,3 +1,7 @@
+How to run: 
+Import the project into an IDE that can run Java
+Go to the src/Main.java class and run the class
+
 # Reflection
 #### What changed from our specification document?
 
@@ -8,7 +12,7 @@ One implementation detail that changed was how input handling was organized. Ins
 Our test plan also became more solid  as we implemented the project. We began creating separate test classes for the application's components, including InputHandler and EmergencyReady, instead of relying exclusively on manually testing the application through the terminal. This allows us to test individual methods and identify problems without running the entire application.
 
 # Work Distribution
-Aaron Jacobsen: Created the github, helped in several different classes
+Aaron Jacobson: Created the github, helped in several different classes
 
 Madison Le: worked on the main classes responsible for running the program
 

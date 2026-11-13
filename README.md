@@ -1,9 +1,8 @@
-What changed from our specification document?
+# Reflection
+#### What changed from our specification document?
 
-Compared to our original specification, Emergency Ready has remained focused on managing a single patient waiting list, but some implementation details have changed as we developed the project. Our original design separated the program into model, view, and controller classes, with each class having a specific responsibility. We maintained this general structure while implementing the application.
-
-The Patient class stores patient information, including the patient ID, name, arrival time, and emergency status. The PatientDeque class manages the waiting list using a doubly linked deque. Emergency patients are added to the front, while regular patients are added to the back. The EmergencyReady class coordinates the application's functionality, while EmergencyReadyView handles displaying information to the user. InputHandler handles collecting and validating user input.
+Compared to our original specification, Emergency Ready has remained focused on managing a single patient waiting list, but some implementation details have changed as we developed the project. Our original design separated the program into model, view, and controller classes, with each class having a specific role to play in the program. We maintained this general structure while implementing the application.
 
 One implementation detail that changed was how input handling was organized. Instead of having the controller independently validate every input, we created an InputHandler class to centralize common input operations. This allows methods such as integer, string, and boolean input to be reused throughout the application. The controller still handles application-specific validation, such as determining whether a menu selection is valid or whether a patient ID already exists.
 
-Our test plan also became more concrete as we implemented the project. We began creating separate test classes for the application's components, including InputHandler and EmergencyReady, instead of relying exclusively on manually testing the application through the terminal. This allows us to test individual methods and identify problems without running the entire application.
+Our test plan also became more solid  as we implemented the project. We began creating separate test classes for the application's components, including InputHandler and EmergencyReady, instead of relying exclusively on manually testing the application through the terminal. This allows us to test individual methods and identify problems without running the entire application.

@@ -1,13 +1,13 @@
 
 /**
- * Controller class for the Emergency Ready application.
- * Coordinates the patient waiting list, login system,
- * input handling, and user interface.
+ * Controller class for the Emergency Ready application. Coordinates the patient
+ * waiting list, login system, input handling, and user interface.
  *
  * @author Madison Le (group 53)
  * @version 2026-11-10
  */
-public class EmergencyReady {
+public class EmergencyReady
+{
 
     private PatientDeque waitingList;
     private EmergencyReadyView view;
@@ -17,7 +17,8 @@ public class EmergencyReady {
     /**
      * Constructs the Emergency Ready application.
      */
-    public EmergencyReady() {
+    public EmergencyReady()
+    {
         waitingList = new PatientDeque();
         view = new EmergencyReadyView();
         loginManager = new LoginManager();
@@ -28,26 +29,29 @@ public class EmergencyReady {
     /**
      * Runs the main application loop.
      */
-    public void run() {
-        // Login loop
-        while (!loginManager.isLoggedIn()) {
+    public void run()
+    {
+        while (!loginManager.isLoggedIn())
+        {
             view.displayLoginMenu();
 
             String username = InputHandler.getStringInput();
             String password = InputHandler.getStringInput();
 
-            if (!loginManager.login(username, password)) {
+            if (!loginManager.login(username, password))
+            {
                 view.displayError("Invalid username or password.");
             }
         }
 
-        // Main application loop
-        while (running && loginManager.isLoggedIn()) {
+        while (running && loginManager.isLoggedIn())
+        {
             view.displayMainMenu();
 
             int choice = InputHandler.getIntInput();
 
-            switch (choice) {
+            switch (choice)
+            {
                 case 1:
                     addEmergencyPatient();
                     break;
@@ -85,7 +89,8 @@ public class EmergencyReady {
     /**
      * Adds an emergency patient to the front of the waiting list.
      */
-    public void addEmergencyPatient() {
+    public void addEmergencyPatient()
+    {
         view.displayMessage("Enter patient ID:");
         String patientID = InputHandler.getStringInput();
 
@@ -103,7 +108,8 @@ public class EmergencyReady {
     /**
      * Adds a regular patient to the back of the waiting list.
      */
-    public void addRegularPatient() {
+    public void addRegularPatient()
+    {
         view.displayMessage("Enter patient ID:");
         String patientID = InputHandler.getStringInput();
 
@@ -121,8 +127,10 @@ public class EmergencyReady {
     /**
      * Removes a patient from the waiting list using their ID.
      */
-    public void removePatient() {
-        if (waitingList.isEmpty()) {
+    public void removePatient()
+    {
+        if (waitingList.isEmpty())
+        {
             view.displayError("The waiting list is empty.");
             return;
         }
@@ -132,10 +140,12 @@ public class EmergencyReady {
 
         boolean removed = waitingList.removePatient(patientID);
 
-        if (removed) {
+        if (removed)
+        {
             view.displayMessage("Patient removed successfully.");
         }
-        else {
+        else
+        {
             view.displayError("No patient found with that ID.");
         }
     }
@@ -144,8 +154,10 @@ public class EmergencyReady {
     /**
      * Calls and removes the next patient from the waiting list.
      */
-    public void callNextPatient() {
-        if (waitingList.isEmpty()) {
+    public void callNextPatient()
+    {
+        if (waitingList.isEmpty())
+        {
             view.displayError("The waiting list is empty.");
             return;
         }
@@ -160,7 +172,8 @@ public class EmergencyReady {
     /**
      * Displays the current patient waiting list.
      */
-    public void displayWaitingList() {
+    public void displayWaitingList()
+    {
         view.displayWaitingList(waitingList);
     }
 }

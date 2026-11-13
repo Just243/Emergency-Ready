@@ -75,4 +75,15 @@ public class InputHandler {
             System.out.print("Try again: ");
         }
     }
+
+
+    /**
+     * Replaces the scanner for testing purposes.
+     *
+     * @param newScanner
+     *            scanner used for testing
+     */
+    static void setScanner(Scanner newScanner) {
+        scanner = newScanner;
+    }
 }

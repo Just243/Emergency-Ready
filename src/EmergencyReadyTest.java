@@ -1,4 +1,5 @@
 import java.lang.reflect.Field;
+import student.TestCase;
 import java.io.ByteArrayInputStream;
 import java.util.Scanner;
 
@@ -6,13 +7,15 @@ import org.junit.Before;
 import org.junit.Test;
 
 /**
- * Tests the EmergencyReady controller.
- * Verifies patient management operations and waiting list behavior.
+ * Tests the EmergencyReady controller. Verifies patient management operations
+ * and waiting list behavior.
  *
  * @author Group 53
  * @version 2026-11-10
  */
-public class EmergencyReadyTest {
+public class EmergencyReadyTest
+    extends TestCase
+{
 
     private EmergencyReady app;
     private PatientDeque waitingList;
@@ -23,7 +26,9 @@ public class EmergencyReadyTest {
      * @throws Exception
      *             if the waiting list field cannot be accessed
      */
-    public void setUp() throws Exception {
+    public void setUp()
+        throws Exception
+    {
         app = new EmergencyReady();
 
         Field field = EmergencyReady.class.getDeclaredField("waitingList");
@@ -40,16 +45,18 @@ public class EmergencyReadyTest {
      * @param input
      *            the input to simulate
      */
-    private void setInput(String input) {
-        InputHandler.setScanner(new Scanner(new ByteArrayInputStream(input
-            .getBytes())));
+    private void setInput(String input)
+    {
+        InputHandler.setScanner(
+            new Scanner(new ByteArrayInputStream(input.getBytes())));
     }
 
 
     /**
      * Tests adding an emergency patient.
      */
-    public void testAddEmergencyPatient() {
+    public void testAddEmergencyPatient()
+    {
         setInput("E001\nJohn\n");
 
         app.addEmergencyPatient();
@@ -63,7 +70,8 @@ public class EmergencyReadyTest {
     /**
      * Tests adding a regular patient.
      */
-    public void testAddRegularPatient() {
+    public void testAddRegularPatient()
+    {
         setInput("R001\nJane\n");
 
         app.addRegularPatient();
@@ -77,7 +85,8 @@ public class EmergencyReadyTest {
     /**
      * Tests removing a patient by ID.
      */
-    public void testRemovePatient() {
+    public void testRemovePatient()
+    {
         waitingList.addLast(new Patient("P001", "John", false));
 
         setInput("P001\n");
@@ -91,7 +100,8 @@ public class EmergencyReadyTest {
     /**
      * Tests removing a patient that does not exist.
      */
-    public void testRemovePatientNotFound() {
+    public void testRemovePatientNotFound()
+    {
         waitingList.addLast(new Patient("P001", "John", false));
 
         setInput("P999\n");
@@ -105,7 +115,8 @@ public class EmergencyReadyTest {
     /**
      * Tests calling the next patient.
      */
-    public void testCallNextPatient() {
+    public void testCallNextPatient()
+    {
         waitingList.addLast(new Patient("P001", "John", false));
 
         app.callNextPatient();
@@ -117,7 +128,8 @@ public class EmergencyReadyTest {
     /**
      * Tests calling the next patient when the waiting list is empty.
      */
-    public void testCallNextPatientEmpty() {
+    public void testCallNextPatientEmpty()
+    {
         app.callNextPatient();
 
         assertTrue(waitingList.isEmpty());
@@ -127,7 +139,8 @@ public class EmergencyReadyTest {
     /**
      * Tests displaying the waiting list.
      */
-    public void testDisplayWaitingList() {
+    public void testDisplayWaitingList()
+    {
         waitingList.addLast(new Patient("P001", "John", false));
 
         app.displayWaitingList();

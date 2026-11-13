@@ -4,6 +4,9 @@ import java.util.Scanner;
 /**
  * Handles displaying information to the user. This class is responsible for the
  * view in MVC.
+ * 
+ * @author Maddie
+ * @version 2026-11-12
  */
 public class EmergencyReadyView
 {
@@ -61,7 +64,7 @@ public class EmergencyReadyView
             return;
         }
 
-        deque.displayPatients();
+        deque.displayWaitingList();
     }
 
 

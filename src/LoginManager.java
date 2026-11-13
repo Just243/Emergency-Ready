@@ -2,6 +2,9 @@
 /**
  * Handles user authentication and login status. This class is part of the
  * model.
+ * 
+ * @author - Madison Le
+ * @version 2026-11-11
  */
 public class LoginManager
 {

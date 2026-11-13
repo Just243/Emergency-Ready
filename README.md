@@ -8,3 +8,10 @@ One implementation detail that changed was how input handling was organized. Ins
 Our test plan also became more solid  as we implemented the project. We began creating separate test classes for the application's components, including InputHandler and EmergencyReady, instead of relying exclusively on manually testing the application through the terminal. This allows us to test individual methods and identify problems without running the entire application.
 
 # Work Distribution
+
+Maddie: Wrote main, EmergencyReady, EmergencyReadyTest, LoginManager, and EmergencyReadyView.
+Romeo: Wrote Patient and PatientDeque
+Aaron: Created Github repository
+Noah: Wrote Patient and Patient Deque
+
+

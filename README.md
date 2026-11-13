@@ -15,13 +15,13 @@ One implementation detail that changed was how input handling was organized. Ins
 Our test plan also became more solid  as we implemented the project. We began creating separate test classes for the application's components, including InputHandler and EmergencyReady, instead of relying exclusively on manually testing the application through the terminal. This allows us to test individual methods and identify problems without running the entire application.
 
 # Work Distribution
-Madison Le: Wrote main, EmergencyReady, EmergencyReadyTest, LoginManager, and EmergencyReadyView.
 
-Romeo Duarte: Completed Patient and PatientDeque.
-
-Aaron Jacobson: Created the GitHub repository and helped in several classes.
-
-Noah Rakvica: Worked on Patient and PatientDeque.
+| Team Member | Contributions |
+| --- | --- |
+| Madison Le | Wrote `main`, `EmergencyReady`, `EmergencyReadyTest`, `LoginManager`, and `EmergencyReadyView`. |
+| Romeo Duarte | Completed `Patient` and `PatientDeque`. |
+| Aaron Jacobson | Created the GitHub repository and helped in several classes. |
+| Noah Rakvica | Worked on `Patient` and `PatientDeque`. |
 
 # What's Next?
 

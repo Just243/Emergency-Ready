@@ -1,3 +1,10 @@
+How to run: 
+Import the project into an IDE that can run Java. 
+Go to the src/Main.java class and run the class. 
+
+How to run tests:
+For Eclipse IDE, go into each individual test class and run them as a JUnit Test. 
+
 # Reflection
 #### What changed from our specification document?
 
@@ -8,10 +15,13 @@ One implementation detail that changed was how input handling was organized. Ins
 Our test plan also became more solid  as we implemented the project. We began creating separate test classes for the application's components, including InputHandler and EmergencyReady, instead of relying exclusively on manually testing the application through the terminal. This allows us to test individual methods and identify problems without running the entire application.
 
 # Work Distribution
+Madison Le: Wrote main, EmergencyReady, EmergencyReadyTest, LoginManager, and EmergencyReadyView.
+Romeo Duarte: Completed Patient and PatientDeque.
+Aaron Jacobson: Created the GitHub repository and helped in several classes.
+Noah Rakvica: Worked on Patient and PatientDeque.
 
-Maddie: Wrote main, EmergencyReady, EmergencyReadyTest, LoginManager, and EmergencyReadyView.
-Romeo: Wrote Patient and PatientDeque
-Aaron: Created Github repository
-Noah: Wrote Patient and Patient Deque
+# What's Next?
 
+We have the functions necessary in order to meet our MVP.
 
+We plan to add a user authentication system that would be able to store usernames and passwords and provide a way to change passwords. We also plan to add a database that stores patient info and their history. For most of this we would have to create new classes but we would have to change the main method in order for this to work. This is part of our stretch goals. Some things that we might add but aren't sure yet would be the implementation of specialized operating rooms (x-ray, cardio, neuro, etc) with a way to match with specific doctors who specialize in those areas.

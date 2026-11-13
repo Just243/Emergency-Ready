@@ -27,3 +27,5 @@ Noah Rakvica: Worked on patient and patient deque
 We have the functions necessary in order to meet our MVP
 
 We plan to add a user authentication system that would be able to store usernames and passwords and provide a way to change passwords. We also plan to add a database that stores patient info and their history. For most of this we would have to create new classes but we would have to change the main method in order for this to work. This is part of our stretch goals. Some things that we might add but aren't sure yet would be the implementation of specialized operating rooms (x-ray, cardio, neuro, etc) with a way to match with specific doctors who specialize in those areas.
+
+we will need to provide tests for user authentication, making sure that a username/password combination that doesn't exist in the database does not grant access into the database. We will need to make tests for making a patient report and patient history, making sure invalid input for patient info and the procedures each patient underwent is properly accounted for.

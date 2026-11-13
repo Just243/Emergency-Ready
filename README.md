@@ -52,3 +52,6 @@ Madison: Continue working on the main program and view.
 Romeo: Help with patient management and any additional features.
 
 Noah: Continue working on testing and help implement the planned features.
+
+#### Generative AI's Role In This Project
+GenAI assisted us throughout the entirety of this project, from the construction of our scope to the revision of our MVP. In this deliverable, GenAI was used to provide suggestions on method implementation and as a guide to better understand the usage of a scanner. GenAI was used exclusively as a tool, not as a replacement of work.

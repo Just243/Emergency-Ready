@@ -24,3 +24,6 @@ Romeo Duarte: completed patient and patient deque
 Noah Rakvica: Worked on patient and patient deque
 # What's Next?
 
+We have the functions necessary in order to meet our MVP
+
+We plan to add a user authentication system that would be able to store usernames and passwords and provide a way to change passwords. We also plan to add a database that stores patient info and their history. For most of this we would have to create new classes but we would have to change the main method in order for this to work. This is part of our stretch goals. Some things that we might add but aren't sure yet would be the implementation of specialized operating rooms (x-ray, cardio, neuro, etc) with a way to match with specific doctors who specialize in those areas.

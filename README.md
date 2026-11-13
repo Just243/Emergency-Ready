@@ -1,6 +1,9 @@
 How to run: 
-Import the project into an IDE that can run Java
-Go to the src/Main.java class and run the class
+Import the project into an IDE that can run Java. 
+Go to the src/Main.java class and run the class. 
+
+How to run tests:
+For Eclipse IDE, go into each individual test class and run them as a JUnit Test. 
 
 # Reflection
 #### What changed from our specification document?

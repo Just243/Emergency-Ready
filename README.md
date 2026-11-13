@@ -16,8 +16,11 @@ Our test plan also became more solid  as we implemented the project. We began cr
 
 # Work Distribution
 Madison Le: Wrote main, EmergencyReady, EmergencyReadyTest, LoginManager, and EmergencyReadyView.
+
 Romeo Duarte: Completed Patient and PatientDeque.
+
 Aaron Jacobson: Created the GitHub repository and helped in several classes.
+
 Noah Rakvica: Worked on Patient and PatientDeque.
 
 # What's Next?

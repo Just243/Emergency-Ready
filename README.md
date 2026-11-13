@@ -9,6 +9,11 @@ Our test plan also became more solid  as we implemented the project. We began cr
 
 # Work Distribution
 Aaron Jacobsen: Created the github, helped in several different classes
+
 Madison Le: worked on the main classes responsible for running the program
+
 Romeo Duarte: completed patient and patient deque
+
 Noah Rakvica: Worked on patient and patient deque
+# What's Next?
+

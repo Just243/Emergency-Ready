@@ -54,5 +54,11 @@ We will need tests for creating accounts, logging in with correct and incorrect 
 | Noah | Worked on testing and helped implement the planned features. |
 
 
+Reflection —
+How did your design absorb the change? List the classes your feature actually touched. Compare that with the prediction in your D3 Next Steps: what matched, what surprised you?
+Our design absorbed the change well, adding the login manager only affected the main class mostly. It was a fairly seamless integration. We weren't able to provide a secure way of being able to change the password, we do have a method to change it. Between here and our final deliverable we should have a method for it.
+
+
+
 #### Generative AI's Role In This Project
 GenAI assisted us throughout the entirety of this project, from the construction of our scope to the revision of our MVP. In this deliverable, GenAI was used to provide suggestions on method implementation and as a guide to better understand the usage of a scanner. GenAI was used exclusively as a tool, not as a replacement of work.

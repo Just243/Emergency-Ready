@@ -46,12 +46,18 @@ We will need tests for creating accounts, logging in with correct and incorrect 
 #### Who does what?
 
 
-| Team Member | Planned Tasks |
+| Team Member | Tasks |
 | --- | --- |
-| Aaron | Help with connecting classes and testing the overall program. |
-| Madison | Continue working on the main program and view. |
-| Romeo | Help with patient management and any additional features. |
-| Noah | Continue working on testing and help implement the planned features. |
+| Aaron | Helped with connecting classes and testing the overall program. |
+| Madison | Wroked on the main program and view. |
+| Romeo | Helped with login manager and helped with creating tests |
+| Noah | Worked on testing and helped implement the planned features. |
+
+
+Reflection —
+How did your design absorb the change? List the classes your feature actually touched. Compare that with the prediction in your D3 Next Steps: what matched, what surprised you?
+Our design absorbed the change well, adding the login manager only affected the main class mostly. It was a fairly seamless integration. We weren't able to provide a secure way of being able to change the password, we do have a method to change it. Between here and our final deliverable we should have a method for it.
+
 
 
 #### Generative AI's Role In This Project

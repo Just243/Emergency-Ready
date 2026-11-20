@@ -77,6 +77,14 @@ public class EmergencyReady
                     running = false;
                     view.displayMessage("Logged out successfully.");
                     break;
+                    
+                case 7:
+                    createUser();
+                    break;
+
+                case 8:
+                    changePassword();
+                    break;
 
                 default:
                     view.displayError("Invalid menu option.");
@@ -176,4 +184,57 @@ public class EmergencyReady
     {
         view.displayWaitingList(waitingList);
     }
+    
+
+/**
+ * Creates a new user account.
+ */
+public void createUser()
+{
+    view.displayMessage("Enter new username:");
+    String username = InputHandler.getStringInput();
+
+    view.displayMessage("Enter new password:");
+    String password = InputHandler.getStringInput();
+
+    boolean created = loginManager.createAccount(username, password);
+
+    if (created)
+    {
+        view.displayMessage("Account created successfully.");
+    }
+    else
+    {
+        view.displayError(
+            "Account could not be created. Username may already exist "
+            + "or information may be invalid.");
+    }
+}
+
+/**
+ * Changes the password of the currently logged-in user.
+ */
+public void changePassword()
+{
+    view.displayMessage("Enter your current password:");
+    String oldPassword = InputHandler.getStringInput();
+
+    view.displayMessage("Enter your new password:");
+    String newPassword = InputHandler.getStringInput();
+
+    boolean changed = loginManager.changePassword(
+        oldPassword, newPassword);
+
+    if (changed)
+    {
+        view.displayMessage("Password changed successfully.");
+    }
+    else
+    {
+        view.displayError(
+            "Password change failed. Check your current password "
+            + "and make sure your new password is not empty.");
+    }
+}
+
 }

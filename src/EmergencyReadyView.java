@@ -44,6 +44,8 @@ public class EmergencyReadyView
         System.out.println("4. Call Next Patient");
         System.out.println("5. Display Waiting List");
         System.out.println("6. Logout");
+        System.out.println("7. Create New User");
+        System.out.println("8. Change Password");
         System.out.print("Enter your choice: ");
     }
 

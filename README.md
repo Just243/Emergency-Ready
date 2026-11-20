@@ -46,12 +46,12 @@ We will need tests for creating accounts, logging in with correct and incorrect 
 #### Who does what?
 
 
-| Team Member | Planned Tasks |
+| Team Member | Tasks |
 | --- | --- |
-| Aaron | Help with connecting classes and testing the overall program. |
-| Madison | Continue working on the main program and view. |
-| Romeo | Help with patient management and any additional features. |
-| Noah | Continue working on testing and help implement the planned features. |
+| Aaron | Helped with connecting classes and testing the overall program. |
+| Madison | Wroked on the main program and view. |
+| Romeo | Helped with login manager and helped with creating tests |
+| Noah | Worked on testing and helped implement the planned features. |
 
 
 #### Generative AI's Role In This Project
